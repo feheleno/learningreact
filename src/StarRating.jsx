@@ -18,6 +18,12 @@ const StarRating = createClass({
             starsSelected: 0
         }
     },
+    componentWillMount() {
+        const { starsSelected } = this.props
+        if (starsSelected) {
+          this.setState({starsSelected})
+        }
+    },
     change(starsSelected) {
         this.setState({starsSelected})
     },
@@ -49,7 +55,7 @@ class StarRating extends Component {
     constructor(props) {
         super(props)
         this.state = {
-            starsSelected: 0
+            starsSelected: props.starsSelected || 0
         }
         this.change = this.change.bind(this)
     }
