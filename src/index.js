@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './stylesheets/globals.scss';
-import AddColorForm from './AddColorForm';
+//import AddColorForm from './AddColorForm';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
