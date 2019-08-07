@@ -1,5 +1,5 @@
 import React from 'react';
-import StarRating from './StarRating.jsx';
+import StarRating from './StarRating';
 
 const Color = ({title, color, rating=0, onRemove=f=>f, onRate=f=>f}) =>
 <section className="color">
@@ -12,3 +12,5 @@ const Color = ({title, color, rating=0, onRemove=f=>f, onRate=f=>f}) =>
         <StarRating starsSelected={rating} onRate={onRate} />
     </div>
 </section>
+
+export default Color;
